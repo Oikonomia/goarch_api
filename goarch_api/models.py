@@ -1,6 +1,3 @@
-""" normal models """
-
-
 class Reading:
     def __init__(self, _id, _type, type_bb, event, translation=None, date=None):
         self.id = _id
