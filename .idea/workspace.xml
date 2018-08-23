@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8edefbc-71df-41a9-9878-b830c52cd7b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goarch_api/daily.py" beforeDir="false" afterPath="$PROJECT_DIR$/goarch_api/daily.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goarch_api/lectionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/goarch_api/lectionary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goarch_api/saint.py" beforeDir="false" afterPath="$PROJECT_DIR$/goarch_api/saint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goarch_api/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/goarch_api/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +43,7 @@
           <entry key="dummy" value="14" />
           <entry key="gitignore" value="1" />
           <entry key="md" value="690" />
-          <entry key="py" value="11444" />
+          <entry key="py" value="11446" />
           <entry key="txt" value="122" />
         </counts>
       </usages-collector>
@@ -53,7 +51,7 @@
         <counts>
           <entry key="Markdown" value="690" />
           <entry key="PLAIN_TEXT" value="137" />
-          <entry key="Python" value="11506" />
+          <entry key="Python" value="11508" />
         </counts>
       </usages-collector>
     </session>
@@ -78,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            <state relative-caret-position="92">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -107,21 +105,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/goarch_api/client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            <state relative-caret-position="161">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1535037865361" expanded="true" signature="46:47" ph="..." />
-                <marker date="1535037865361" expanded="true" signature="46:51" ph="..." />
+                <marker date="1535039169428" expanded="true" signature="46:47" ph="..." />
+                <marker date="1535039169428" expanded="true" signature="46:51" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/goarch_api/daily.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
@@ -199,12 +197,12 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/goarch_api/models.py" />
         <option value="$PROJECT_DIR$/LICENSE.txt" />
-        <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/goarch_api/client.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/goarch_api/saint.py" />
         <option value="$PROJECT_DIR$/goarch_api/lectionary.py" />
         <option value="$PROJECT_DIR$/goarch_api/daily.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/goarch_api/client.py" />
       </list>
     </option>
   </component>
@@ -365,7 +363,7 @@
     <frame x="54" y="27" width="1312" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8172839" visible="true" weight="0.24980605" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8172839" visible="true" weight="0.24980605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.18271606" side_tool="true" weight="0.24980605" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -377,7 +375,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294702" />
       <window_info anchor="bottom" id="Thumbnails" order="7" weight="0.3294702" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3305648" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3305648" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.3294702" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -406,13 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3082">
@@ -427,18 +418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15502">
           <caret line="674" selection-start-line="674" selection-end-line="674" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goarch_api/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1535037865361" expanded="true" signature="46:47" ph="..." />
-            <marker date="1535037865361" expanded="true" signature="46:51" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -474,6 +453,25 @@
             <element signature="e#0#22#0" expanded="true" />
             <marker date="1535039127435" expanded="true" signature="165:170" ph="..." />
             <marker date="1535039127435" expanded="true" signature="200:438" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goarch_api/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1535039169428" expanded="true" signature="46:47" ph="..." />
+            <marker date="1535039169428" expanded="true" signature="46:51" ph="..." />
           </folding>
         </state>
       </provider>
