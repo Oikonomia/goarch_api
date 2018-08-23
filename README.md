@@ -4,7 +4,6 @@ goarch_api
 
 A Python interface for the Greek Orthodox Archdiocese of America's Chapel API.
 
-API used with written permission from GOArch's Department of Internet Ministries. Please seek approval before any use of the program by contacting `internet [at] goarch [dot] org`.
+Install through pip: `pip install goarch_api`
 
-Install via pip: `pip install goarch_api`  
-Depends on: requests, lxml (install via pip)
+Documentation coming soon.
