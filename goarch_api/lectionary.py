@@ -48,7 +48,7 @@ class Lectionary:
             self.translations = []
 
             for translation in tree.findall("translation"):
-                lang = translation.get("xml:lang")
+                lang = translation.get("{http://www.w3.org/XML/1998/namespace}lang")
 
                 if lang != "ar":  # because arabic and the html escape stuff doesn't really work
                     title = translation.find("title").text

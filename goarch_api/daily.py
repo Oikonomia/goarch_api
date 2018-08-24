@@ -39,7 +39,7 @@ class Daily:
                 event = reading.find("event").text
 
                 translation = reading.find("translation")
-                t_lang = translation.get("xml:lang")
+                t_lang = translation.get("{http://www.w3.org/XML/1998/namespace}lang")
                 t_title = translation.find("title").text
                 t_short_title = translation.find("shorttitle").text
 

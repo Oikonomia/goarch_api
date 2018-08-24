@@ -57,7 +57,7 @@ class Saint:
             self.readings = []
 
             for reading in tree.find("readings").iterchildren():
-                lang = reading.get("xml:lang")
+                lang = reading.get("{http://www.w3.org/XML/1998/namespace}lang")
                 title = reading.find("title").text
                 short_title = reading.find("shorttitle").text
                 body = remove_html_tags(reading.find("body").text).strip()
@@ -77,7 +77,7 @@ class Saint:
                 tone = hymn.find("tone").text
 
                 translation = hymn.find("translation")
-                t_lang = translation.get("xml:lang")
+                t_lang = translation.get("{http://www.w3.org/XML/1998/namespace}lang")
                 t_body = translation.find("body").text
                 t_copyright = translation.find("copyright").text
 
