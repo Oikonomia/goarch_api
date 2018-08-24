@@ -1,6 +1,7 @@
 import re
 
 from lxml import etree
+import html
 
 from goarch_api.client import HTTPClient
 from goarch_api.models import Translation, LectionaryReading, Icon, Hymn
@@ -8,7 +9,7 @@ from goarch_api.models import Translation, LectionaryReading, Icon, Hymn
 
 def remove_html_tags(raw):
     regex = re.compile('<.*?>')
-    return re.sub(regex, " ", raw)
+    return html.unescape(re.sub(regex, " ", raw))
 
 
 class Saint:
@@ -37,7 +38,7 @@ class Saint:
                 file_path = icon.find("filepath").text
                 _copyright = icon.find("copyright").text
 
-                converted_icon = Icon(_id, file_path, _copyright)
+                converted_icon = Icon(file_path, _copyright, _id=_id)
 
                 self.icons.append(converted_icon)
 
