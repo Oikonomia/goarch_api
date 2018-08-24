@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="goarch_api",
-    version="1.0.6",
+    version="1.0.7",
     author="Elliott Pardee",
     author_email="me@vypr.xyz",
     url="https://github.com/Oikonomia/goarch_api",
@@ -19,7 +19,6 @@ setup(
         "Intended Audience :: Developers",
         "Intended Audience :: Religion",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-        "Natural Language :: Arabic",
         "Natural Language :: English",
         "Natural Language :: Greek",
         "Operating System :: OS Independent",

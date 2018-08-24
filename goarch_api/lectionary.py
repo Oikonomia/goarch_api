@@ -49,23 +49,25 @@ class Lectionary:
 
             for translation in tree.findall("translation"):
                 lang = translation.get("xml:lang")
-                title = translation.find("title").text
-                short_title = translation.find("shorttitle").text
-                clip = translation.find("clip").text.strip()
-                body = remove_html_tags(translation.find("body").text).strip()
 
-                if self.type == "epistle":
-                    prok_mode = translation.find("prokmode").text
-                    prok_psalm = translation.find("prokpsalm").text.replace(": ", ":")
-                    prok_prokeimenon = translation.find("prokprokeimenon").text
-                    prok_verse = translation.find("prokverse").text
+                if lang != "ar":  # because arabic and the html escape stuff doesn't really work
+                    title = translation.find("title").text
+                    short_title = translation.find("shorttitle").text
+                    clip = translation.find("clip").text.strip()
+                    body = remove_html_tags(translation.find("body").text).strip()
 
-                    converted_translation = Translation(lang=lang, title=title, short_title=short_title,
-                                                        clip=clip, body=body, prok_mode=prok_mode,
-                                                        prok_psalm=prok_psalm, prok_prokeimenon=prok_prokeimenon,
-                                                        prok_verse=prok_verse)
-                else:
-                    converted_translation = Translation(lang=lang, title=title, short_title=short_title,
-                                                        clip=clip, body=body)
+                    if self.type == "epistle":
+                        prok_mode = translation.find("prokmode").text
+                        prok_psalm = translation.find("prokpsalm").text.replace(": ", ":")
+                        prok_prokeimenon = translation.find("prokprokeimenon").text
+                        prok_verse = translation.find("prokverse").text
 
-                self.translations.append(converted_translation)
+                        converted_translation = Translation(lang=lang, title=title, short_title=short_title,
+                                                            clip=clip, body=body, prok_mode=prok_mode,
+                                                            prok_psalm=prok_psalm, prok_prokeimenon=prok_prokeimenon,
+                                                            prok_verse=prok_verse)
+                    else:
+                        converted_translation = Translation(lang=lang, title=title, short_title=short_title,
+                                                            clip=clip, body=body)
+
+                    self.translations.append(converted_translation)
