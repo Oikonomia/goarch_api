@@ -47,8 +47,10 @@ class Saint:
             for reading in tree.find("lectionary").iterchildren():
                 _id = reading.find("id").text
                 _type = reading.get("type")
+                title = reading.find("title").text
+                short_title = reading.find("shorttitle").text
 
-                lectionary_reading = LectionaryReading(_id, _type)
+                lectionary_reading = LectionaryReading(_id, _type, title, short_title)
 
                 self.lectionary.append(lectionary_reading)
 

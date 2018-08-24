@@ -48,9 +48,11 @@ class Icon:
 
 # this is like a Reading/Translation hybrid
 class LectionaryReading:
-    def __init__(self, _id, _type):
+    def __init__(self, _id, _type, title, short_title):
         self.id = _id
         self.type = _type
+        self.title = title
+        self.short_title = short_title
 
 
 class Hymn:

@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="goarch_api",
-    version="1.0.4",
+    version="1.0.5",
     author="Elliott Pardee",
     author_email="me@vypr.xyz",
     url="https://github.com/Oikonomia/goarch_api",
