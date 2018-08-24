@@ -1,4 +1,5 @@
 import re
+import html
 
 from lxml import etree
 
@@ -8,7 +9,7 @@ from goarch_api.models import Translation, Icon
 
 def remove_html_tags(raw):
     regex = re.compile('<.*?>')
-    return re.sub(regex, " ", raw)
+    return html.unescape(re.sub(regex, " ", raw))
 
 
 class Lectionary:
