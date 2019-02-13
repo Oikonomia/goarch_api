@@ -1,3 +1,21 @@
+"""
+    Copyright (c) 2018-2019 Elliott Pardee <me [at] vypr [dot] xyz>
+    This file is part of goarch_api.
+
+    goarch_api is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    goarch_api is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with goarch_api.  If not, see <http://www.gnu.org/licenses/>.
+"""
+
 import re
 import html
 
@@ -26,6 +44,11 @@ class Lectionary:
         if date is not None:
             self._path += f"&date={date}"
             self.public_url += f"&date={date}"
+
+        self.display_title = None
+        self.prokeimenon = None
+        self.icon = None
+        self.translations = []
 
     def get_data(self):
         client = HTTPClient()

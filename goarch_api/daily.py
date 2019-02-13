@@ -1,3 +1,21 @@
+"""
+    Copyright (c) 2018-2019 Elliott Pardee <me [at] vypr [dot] xyz>
+    This file is part of goarch_api.
+
+    goarch_api is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    goarch_api is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with goarch_api.  If not, see <http://www.gnu.org/licenses/>.
+"""
+
 from lxml import etree
 
 from goarch_api.client import HTTPClient
@@ -15,6 +33,14 @@ class Daily:
             self._path += f"?date={date}"
             self.public_url += f"?date={date}"
 
+        self.formatted_date = None
+        self.icon = None
+        self.fasting = None
+        self.tone = None
+        self.readings = []
+        self.lectionary_title = None
+        self.saints = []
+
     def get_data(self):
         client = HTTPClient()
 
@@ -29,8 +55,6 @@ class Daily:
             self.icon = tree.find("icon").text
             self.fasting = tree.find("fasting").text
             self.tone = tree.find("tone").text
-
-            self.readings = []
 
             for reading in tree.find("readings").iterchildren():
                 _id = reading.get("id")
