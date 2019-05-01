@@ -54,7 +54,9 @@ class Daily:
 
             self.icon = tree.find("icon").text
             self.fasting = tree.find("fasting").text
-            self.tone = tree.find("tone").text
+
+            if tree.find("tone") is not None:
+                self.tone = tree.find("tone").text
 
             for reading in tree.find("readings").iterchildren():
                 _id = reading.get("id")

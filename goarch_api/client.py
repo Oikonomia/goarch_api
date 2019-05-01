@@ -24,11 +24,11 @@ class HTTPClient:
     def __init__(self):
         self.session = requests.session()
 
-        base_ua = 'goarch_api (https://github.com/vypr/goarch_api 1.0.9), Python/'
+        base_ua = 'goarch_api (https://github.com/vypr/goarch_api 1.1.0), Python/'
         self.user_agent = f"{base_ua}{sys.version_info[0]}.{sys.version_info[1]}"
 
     def request(self, method, path):
-        base_url = "https://onlinechapel.goarch.org"
+        base_url = "http://onlinechapel.goarch.org"
 
         headers = {
             "User-Agent": self.user_agent
