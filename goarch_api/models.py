@@ -29,8 +29,9 @@ class Reading:
         is_gospel = (_type == "G" and type_bb == "gospel")
         is_epistle = (_type == "E" and type_bb == "epistle")
         is_matins = (_type == "MG" and type_bb == "mg")
+        is_ot = (_type == "OT" and type_bb == "ot")
 
-        if not (is_gospel ^ is_epistle ^ is_matins):
+        if not (is_ot ^ is_gospel ^ is_epistle ^ is_matins):
             raise Exception("Invalid or mismatching reading types.")
 
         if is_epistle:

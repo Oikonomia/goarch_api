@@ -24,7 +24,7 @@ class HTTPClient:
     def __init__(self):
         self.session = requests.session()
 
-        base_ua = 'goarch_api (https://github.com/vypr/goarch_api 1.1.0), Python/'
+        base_ua = 'goarch_api (https://github.com/Oikonomia/goarch_api 1.1.1), Python/'
         self.user_agent = f"{base_ua}{sys.version_info[0]}.{sys.version_info[1]}"
 
     def request(self, method, path):

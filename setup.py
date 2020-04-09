@@ -2,10 +2,10 @@ from setuptools import setup
 
 setup(
     name="goarch_api",
-    version="1.1.0",
+    version="1.1.1",
     author="Elliott Pardee",
     author_email="me@vypr.xyz",
-    url="https://github.com/vypr/goarch_api",
+    url="https://github.com/Oikonomia/goarch_api",
     license="GPLv3",
     packages=["goarch_api"],
     description="A Python interface for the Greek Orthodox Archdiocese of America's Chapel API.",
