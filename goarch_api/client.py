@@ -18,6 +18,7 @@
 
 import requests
 import sys
+import cloudscraper
 
 
 class HTTPClient:
@@ -35,7 +36,7 @@ class HTTPClient:
         }
 
         url = f"{base_url}{path}"
-        resp = self.session.request(method, url, headers=headers)
+        resp = cloudscraper.create_scraper(sess=self.session).request(method, url, headers=headers)
 
         exception_strings = {
             "400": "Bad Request",
